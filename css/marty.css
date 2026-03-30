@@ -5,6 +5,7 @@ html{
 }
 
 body {
+position: relative;
 margin: 0;
 padding: 0;
 display: flex;
@@ -12,6 +13,7 @@ width: 100%;
 min-height: 100vh;
 flex-direction: column;
 background: #FFFAE4;
+gap:auto;
 }
 
 header, footer {
@@ -23,14 +25,20 @@ overflow: hidden;
 header > img, footer > img {
     width: 100%;
     display: block;        
-    height: auto;
+    height: 100%;
+    object-fit: cover;
+}
+
+footer{
+position: absolute;
+bottom: 0;
 }
 
 main{
 display: flex;
 align-items: center;
 justify-content: center;
-margin: 0 auto;
+margin: auto;
 gap: 77px;
 }
 
@@ -78,7 +86,7 @@ font-family: NanumSquareRound;
 font-size: 20px;
 font-style: normal;
 font-weight: 700;
-line-height: 28px; /* 140% */
+line-height: 28px;
 letter-spacing: -0.1px;
 }
 
@@ -106,7 +114,7 @@ font-family: NanumSquareRound;
 font-size: 20px;
 font-style: normal;
 font-weight: 800;
-line-height: 28px; /* 140% */
+line-height: 28px;
 letter-spacing: -0.1px;
 text-align: left;
 }
@@ -126,7 +134,7 @@ font-family: NanumSquareRound;
 font-size: 20px;
 font-style: normal;
 font-weight: 700;
-line-height: 28px; /* 140% */
+line-height: 28px;
 letter-spacing: -0.1px;
 }
 
@@ -138,7 +146,7 @@ font-family: NanumSquareRound;
 font-size: 20px;
 font-style: normal;
 font-weight: 700;
-line-height: 28px; /* 140% */
+line-height: 28px;
 letter-spacing: -0.1px;
 }
 
@@ -158,6 +166,25 @@ font-family: NanumSquareRound;
 font-size: 32px;
 font-style: normal;
 font-weight: 800;
-line-height: 24px; /* 75% */
+line-height: 24px;
 letter-spacing: -0.1px;
+}
+
+@media (max-width: 1186px) {
+    main {
+        flex-direction: column; 
+        align-items: center;  
+        gap: 40px;          
+        width: 100%;        
+        padding: 40px 20px;   
+    }
+
+    figure, section {
+        width: 100%;           
+        max-width: 500px;   
+    }
+
+    section {
+        align-items: center;    
+    }
 }
