@@ -2,63 +2,69 @@
 <html>
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width", initial-scale=1.0">
     <title>마티는 아기곰</title>
     <link rel="stylesheet" href="/goorm-practice/css/marty.css">
 </head>
 
 <body>
     <header>
-        <img src="/goorm-practice/images/top_pattern.png" alt="상단 패턴">
+        <img class="top_pattern" src="/goorm-practice/images/top_pattern.png" alt="상단 패턴">
     </header>
 
     <main>
 
-        <figure>
-            <div>마티</div>
-
-            <img src="/goorm-practice/images/marty.png" alt="마티 이미지">
-
-            <p>
+        <section class="top">
+            <div class="name">마티</div>
+            <a class="more-link" href="https://animalcrossing.soopoolleaf.com/ko/acna/Marty/" title="마티 정보 더보기">마티 정보 더보기</a>
+        </section>
+        <section class="middle">
+            <div class="left-area">
+                <img class="profile" src="/goorm-practice/images/marty.png" alt="마티 이미지">
+                <p class="info">
                 폼폼푸린을 정말 좋아하는 마티. 트레이드 마크는 역시 짙은 갈색의 베레모랍니다. 많이 먹고 더 둥글둥글해지고 싶어~ 마티는 황금빛 노란색 곰 새끼로, 하얀 코털, 하얀 발, 작은 분홍색 코, 분홍색 볼을 가지고 있습니다. 귀 안쪽은 크림색이고, 귀는 어두운 갈색에 노란색이 가미되어 있으며, 머리 위에는 연한 갈색의 표시가 있습니다.
-            </p>
-        </figure>
-
-        <section>
-            <div>
-                <label>성격</label>
-                <input type="text" placeholder="입력해주세요">
+                </p>
             </div>
-            <div>
-                <label>종</label>
-                <input type="text" placeholder="입력해주세요">
+            <div class="right-area">
+                <ul class="info-list-group" list-style-type:none>
+                    <li class="info-list">
+                        <label for="character">성격</label>
+                        <input id="character" type="text" placeholder="입력해주세요">
+                    </li>
+                    <li class="info-list">
+                        <label for="species">종</label>
+                        <input id="species" type="text" placeholder="입력해주세요">
+                    </li>
+                    <li class="info-list">
+                        <label for="hobby">취미</label>
+                        <input id="hobby" type="text" placeholder="입력해주세요">
+                    </li>
+                    <li class="info-list">
+                        <label for="tongue">말투</label>
+                        <input id="tongue" type="text" placeholder="입력해주세요">
+                    </li>
+                    <li class="info-list">
+                        <label for="style">스타일</label>
+                        <input id="style" type="text" placeholder="입력해주세요">
+                    </li>
+                    <li class="info-list">
+                        <label for="ch-color">색상</label>
+                        <input id="ch-color" type="text" placeholder="입력해주세요">
+                    </li>
+                    <li class="info-list">
+                        <label for="birthday">생일</label>
+                        <input id="birthday" type="text" placeholder="입력해주세요">
+                    </li>
+                </ul>
             </div>
-            <div>
-                <label>취미</label>
-                <input type="text" placeholder="입력해주세요">
-            </div>
-            <div>
-                <label>말투</label>
-                <input type="text" placeholder="입력해주세요">
-            </div>
-            <div>
-                <label>스타일</label>
-                <input type="text" placeholder="입력해주세요">
-            </div>
-            <div>
-                <label>색상</label>
-                <input type="text" placeholder="입력해주세요">
-            </div>
-            <div>
-                <label>생일</label>
-                <input type="text" placeholder="입력해주세요">
-            </div>
-
-            <button>오케이!</button>
+        </section>
+        <section class="bottom">
+            <button class="btn-ok">오케이!</button>
         </section>
     </main>
 
     <footer>
-        <img src="/goorm-practice/images/bottom_pattern.png">
+        <img class="bottom_pattern" src="/goorm-practice/images/bottom_pattern.png">
     </footer>
 </body>
 </html>
