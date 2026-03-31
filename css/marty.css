@@ -219,6 +219,21 @@ line-height: 24px;
 letter-spacing: -0.1px;
 }
 
+.info .highlight1{
+        color: #09B4D3;
+        font-weight: 800;
+}
+
+.info .highlight2{
+        color: #E68B07;
+        font-weight: 800;
+}
+
+.info .highlight3{
+        color: #DC88B8;
+        font-weight: 800;
+}
+
 @media (max-width: 1186px) {
 
     .middle{
@@ -266,6 +281,7 @@ letter-spacing: -0.1px;
         width: 100%;
     }
 
+
     .info-list > label {
         width: auto;
         text-align: left;
@@ -294,5 +310,6 @@ letter-spacing: -0.1px;
     .bottom{
     justify-content: center;
 }
+
 
 }
